@@ -1,0 +1,21 @@
+<% for (var chunk in htmlWebpackPlugin.files.chunks) { %>
+<% htmlWebpackPlugin.files.chunks[chunk].css.forEach(function(css){ %>
+<link rel="stylesheet" href="<%= css %>">
+<% }) %>
+<% } %>
+<div ng-controller="cbAppCtrl as app">
+    <!--<div class="left-container">-->
+        <!--<cc-menu-bar class="cc-side-container"-->
+                     <!--unfold="app.menusOptions.unfold"-->
+                     <!--menu-source="app.menusOptions.menusResource"-->
+                     <!--shop-source="app.menusOptions.shopsResource">-->
+        <!--</cc-menu-bar>-->
+    <!--</div>-->
+
+    <!--<div class="center-container">-->
+        <!--<ui-view></ui-view>-->
+    <!--</div>-->
+</div>
+<% var i = 0; for (var chunk in htmlWebpackPlugin.files.chunks) { %>
+<script src="<%= htmlWebpackPlugin.files.chunks[chunk].entry %>" seq="<%= i++ %>"></script>
+<% } %>
