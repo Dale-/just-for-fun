@@ -1,8 +1,8 @@
-.DS_Store
-.idea
-dist
 node_modules
+.idea
+!build
+build/*
+dist
 npm-debug.log
-.sass-cache/
-*.css.map
-/branding
+
+
