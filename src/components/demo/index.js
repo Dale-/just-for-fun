@@ -4,8 +4,7 @@
  * @since 12/7/16
  */
 
-// import './_demo.scss';
-
+import './_demo.scss';
 
 import template from './demo.tpl.html';
 import controller from './DemoController';
