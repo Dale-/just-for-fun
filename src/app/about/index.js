@@ -10,8 +10,8 @@ import angular from 'angular';
 import aboutTplUrl from './index.html';
 import AboutController from './AboutController';
 
-systemRouter.$inject = ['$stateProvider'];
-function systemRouter($stateProvider) {
+aboutRouter.$inject = ['$stateProvider'];
+function aboutRouter($stateProvider) {
 
 	$stateProvider.state('app.about', {
 		url: 'about',
@@ -22,5 +22,5 @@ function systemRouter($stateProvider) {
 }
 
 export default angular.module('app.about', [])
-	.config(systemRouter)
+	.config(aboutRouter)
 	.name;

@@ -10,8 +10,8 @@ import angular from 'angular';
 import personalTplUrl from './index.html';
 import PersonalController from './PersonalController';
 
-systemRouter.$inject = ['$stateProvider'];
-function systemRouter($stateProvider) {
+personal.$inject = ['$stateProvider'];
+function personal($stateProvider) {
 
 	$stateProvider.state('app.personal', {
 		url: 'personal',
@@ -22,5 +22,5 @@ function systemRouter($stateProvider) {
 }
 
 export default angular.module('app.personal', [])
-	.config(systemRouter)
+	.config(personal)
 	.name;

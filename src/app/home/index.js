@@ -10,8 +10,8 @@ import angular from 'angular';
 import homeTplUrl from './index.html';
 import HomeController from './HomeController';
 
-systemRouter.$inject = ['$stateProvider'];
-function systemRouter($stateProvider) {
+homeRouter.$inject = ['$stateProvider'];
+function homeRouter($stateProvider) {
 
 	$stateProvider.state('app.home', {
 		url: 'home',
@@ -22,5 +22,5 @@ function systemRouter($stateProvider) {
 }
 
 export default angular.module('app.home', [])
-	.config(systemRouter)
+	.config(homeRouter)
 	.name;
