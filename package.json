@@ -8,7 +8,7 @@
     "start": "node server.js",
     "lint": "eslint src",
     "prepush": "npm test",
-    "build": "npm run build:dist"
+    "build": "webpack --config webpack-build.config.js"
   },
   "repository": {
     "type": "git",
