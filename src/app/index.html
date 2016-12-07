@@ -1,22 +1,7 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Webpack + angularjs 1.x + ES6</title>
-    <% var i = 0;
-    for (var chunk in htmlWebpackPlugin.files.css) { %>
-    <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.css[chunk] %>"></link>
-    <% } %>
-</head>
-<body class="container">
-<h2> Just For Fun </h2>
-<div ng-app="App">
-    <div ng-controller="AppController as fun">
-    </div>
-</div>
-<% var i = 0;
-for (var chunk in htmlWebpackPlugin.files.js) { %>
-<script src="<%= htmlWebpackPlugin.files.js[chunk] %>"></script>
-<% } %>
-</body>
-</html>
+<ul>
+	<li><a ui-sref=".about">About</a></li>
+	<li><a ui-sref=".home">Home</a></li>
+	<li><a ui-sref=".personal">Personal</a></li>
+</ul>
+
+<ui-view></ui-view>

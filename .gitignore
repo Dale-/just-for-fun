@@ -1,8 +1,10 @@
 node_modules
 .idea
-!build
-build/*
+build
 dist
+lib
+.sass-cache/
+.DS_Store
 npm-debug.log
 
 

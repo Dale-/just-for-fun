@@ -5,10 +5,8 @@
  */
 
 import angular from 'angular';
-import menu from './menu';
 
 export default angular
-	.module('compoents', [
-		menu
+	.module('app.components', [
 	])
 	.name;

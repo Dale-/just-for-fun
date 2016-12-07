@@ -4,10 +4,10 @@
  * @since 12/7/16
  */
 
-export default class HomeController {
+export default class PersonalController {
 
 	constructor() {
-		this.name = 'Home';
+		this.name = 'personal';
 	}
 
 }
