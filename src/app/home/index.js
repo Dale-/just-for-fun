@@ -17,7 +17,7 @@ function systemRouter($stateProvider) {
 		url: 'home',
 		templateUrl: homeTplUrl,
 		controller: HomeController,
-		controllerAs: '$ctrl'
+		controllerAs: 'vm'
 	});
 }
 
