@@ -5,8 +5,10 @@
  */
 
 import angular from 'angular';
+import demo from './demo';
 
 export default angular
 	.module('app.components', [
+		demo
 	])
 	.name;
