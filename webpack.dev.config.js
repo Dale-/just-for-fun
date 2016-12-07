@@ -5,7 +5,7 @@ module.exports = {
     // configuration
 	devtool: 'source-map',
 	entry: {
-		app: ['webpack-hot-middleware/client?reload=true', './src/app.js'],
+		app: ['webpack-hot-middleware/client?reload=true', './src/app/app.js'],
 		libs: ['angular', 'angular-resource']
 	},
 	output: {
@@ -19,7 +19,7 @@ module.exports = {
 	},
 	plugins: [
 		new HTMLPlugin({
-			template: './src/index.html',
+			template: './src/app/index.html',
 			filename: 'index.html',
 			inject: false
 		}),
@@ -50,9 +50,12 @@ module.exports = {
 				include: __dirname + '/src'
 			},
 			{
-				test: /\.css$/,
-				loaders: ['style', 'css'],
-				includes: [__dirname + '/src', __dirname + '/node_modules/bootstrap/dist/css/bootstrap.min.css']
+				test: /\.(sc|c)ss$/,
+				loaders: ['style', 'css', 'postcss', 'resolve-url', 'sass?sourceMap'],
+				exclude: /(node_modules|bower_components)/
+				//test: /\.css$/,
+				//loaders: ['style', 'css'],
+				//includes: [__dirname + '/src', __dirname + '/node_modules/bootstrap/dist/css/bootstrap.min.css']
 			},
 			{
 				test: /\.woff|\.woff2|\.svg|.eot|\.ttf/,

@@ -7,7 +7,7 @@ module.exports = {
     // configuration
 	devtool: 'source-map',
 	entry: {
-		app: ['./src/app.js'],
+		app: ['./src/app/app.js'],
 		libs: ['angular', 'angular-resource']
 	},
 	output: {
@@ -61,11 +61,17 @@ module.exports = {
 				include: __dirname + '/src'
 			},
 			{
-				test: /\.css$/,
+				test: /\.(sc|c)ss$/,
 				// 注意 loader 而不是 loaders
-				loader: ExtractTextPlugin.extract('style', 'css'),
+				loader: ExtractTextPlugin.extract({
+					loader: 'css?-minimize!postcss!resolve-url!sass?sourceMap',
+					fallbackLoader: 'style'
+				}),
+				exclude: /(node_modules|bower_components)/
+				//test: /\.css$/,
+				//loader: ExtractTextPlugin.extract('style', 'css'),
 				// 注意 因为 bootstrap.css 在 node_modules 中, 为了处理 bootstrap 所以删除 exclude
-				includes: [__dirname + '/src', __dirname + '/node_modules/bootstrap/dist/css/bootstrap.css']
+				//includes: [__dirname + '/src', __dirname + '/node_modules/bootstrap/dist/css/bootstrap.css']
 			},
 			{
 				test: /\.woff|\.woff2|\.svg|.eot|\.ttf/,

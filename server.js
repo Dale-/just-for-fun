@@ -52,7 +52,7 @@ app.use(webpackHotMiddleware(compiler, {
 }));
 
 app.get('/', function(req, res) {
-	res.sendFile(__dirname + '/src/index.html');
+	res.sendFile(__dirname + '/src/app/index.html');
 });
 
 app.listen(3000, 'localhost', function(err) {
