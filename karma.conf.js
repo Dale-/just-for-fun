@@ -1,3 +1,5 @@
+var path = require('path');
+
 // Karma configuration
 // Generated on Mon May 16 2016 14:18:34 GMT+0800 (CST)
 module.exports = function(config) {
@@ -14,7 +16,7 @@ module.exports = function(config) {
 
 		// list of files / patterns to load in the browser
 		files: [
-			'test/index.js'
+			'./test/index.js'
 		],
 
 
@@ -25,34 +27,42 @@ module.exports = function(config) {
 		// preprocess matching files before serving them to the browser
 		// available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
 		preprocessors: {
-			'test/index.js': ['webpack']
+			'./test/index.js': ['webpack']
 		},
 
 		// Webpack
 		webpack: {
 			devtool: 'eval',
-			module: {
-				loaders: [
-					{
-						test: /\.js?$/,
-						loaders: ['babel'],
-						exclude: /node_modules/,
-						includes: [__dirname + '/src', __dirname + '/test']
-					},
-					{
-						test: /\.css$/,
-						loaders: ['style', 'css'],
-						includes: [__dirname + '/src', __dirname + '/node_modules/bootstrap/dist/css/bootstrap.min.css']
-					},
-					{
-						test: /\.woff|\.woff2|\.svg|.eot|\.ttf/,
-						loader: 'url?prefix=font/&limit=10000'
-					}
-				]
-			},
 			output: {
 				pathinfo: true
+			},
+			eslint: {
+				configFile: '.eslintrc',
+				emitWarning: true,
+				emitError: true,
+				formatter: require('eslint-friendly-formatter')
+			},
+			module: {
+				preLoaders: [{
+					test: /\.js$/,
+					loader: 'eslint-loader',
+					exclude: /node_modules/,
+					include: [path.join(__dirname, './src')]
+				}],
+				loaders: [{
+					test: /\.js$/,
+					loaders: ['babel'],
+					exclude: /node_modules/,
+					include: [path.join(__dirname, './src'), path.join(__dirname, './test')]
+				}],
+				postLoaders: [{
+					test: /\.js$/,
+					loader: 'istanbul-instrumenter',
+					exclude: /node_modules|_spec\.js$/,
+					include: [path.join(__dirname, './src')]
+				}]
 			}
+
 		},
 
 
@@ -61,10 +71,22 @@ module.exports = function(config) {
 			noInfo: true
 		},
 
+
 		// test results reporter to use
 		// possible values: 'dots', 'progress'
 		// available reporters: https://npmjs.org/browse/keyword/karma-reporter
-		reporters: ['progress'],
+		reporters: ['progress', 'coverage'],
+
+
+		// optionally, configure the reporter
+		coverageReporter: {
+			reporters: [
+				// generates ./coverage/lcov.info
+				{type: 'lcovonly', subdir: '.'},
+				// generates ./coverage/coverage-final.json
+				{type: 'json', subdir: '.'}
+			]
+		},
 
 
 		// web server port
@@ -86,11 +108,23 @@ module.exports = function(config) {
 
 		// start these browsers
 		// available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-		browsers: ['Chrome'],
+		browsers: ['PhantomJS', 'Chrome'],
 
 
 		// Continuous Integration mode
 		// if true, Karma captures browsers, runs the tests and exits
-		singleRun: false
+		singleRun: true,
+
+		// Concurrency level
+		// how many browser should be started simultaneous
+		concurrency: Infinity,
+
+		plugins: [
+			'karma-webpack', // *** This 'registers' the Karma webpack plugin.
+			'karma-coverage',
+			'karma-jasmine',
+			'karma-phantomjs-launcher',
+			'karma-chrome-launcher'
+		]
 	});
 };

@@ -14,4 +14,9 @@ export default class DemoController {
 		this.gridData = this.data.sort((v1, v2) => v1 - v2);
 	}
 
+
+	add(num1, num2) {
+		return num1 + num2;
+	}
+
 }
