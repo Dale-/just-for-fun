@@ -78,10 +78,9 @@
   },
   "dependencies": {
     "angular": "^1.5.0",
-    "angular-es-utils": "^1.2.23",
+    "angular-es-utils": "^2.1.2",
     "angular-resource": "^1.5.0",
-    "angular-ui-router": "^0.2.18",
-    "ccms-components": "^1.0.1",
-    "normalize.css": "^4.1.1"
+    "angular-ui-router": "^0.3.2",
+    "normalize.css": "^5.0.0"
   }
 }
