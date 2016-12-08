@@ -13,6 +13,7 @@ import ngResource from 'angular-resource';
 import components from '../components';
 import homeModule from './home';
 import aboutModule from './about';
+import contactModule from './contact';
 import personalModule from './personal';
 
 import appTplUrl from './index.html';
@@ -34,6 +35,7 @@ export default angular
 		ngResource,
 		homeModule,
 		aboutModule,
+		contactModule,
 		personalModule
 	])
 	.config(appRouter)
