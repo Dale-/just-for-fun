@@ -118,14 +118,14 @@ module.exports = function(config) {
 
 		// Concurrency level
 		// how many browser should be started simultaneous
-		concurrency: Infinity,
+		concurrency: Infinity
 
-		plugins: [
-			'karma-webpack', // *** This 'registers' the Karma webpack plugin.
-			'karma-coverage',
-			'karma-jasmine',
-			'karma-phantomjs-launcher',
-			'karma-chrome-launcher'
-		]
+		//plugins: [
+		//	'karma-webpack', // *** This 'registers' the Karma webpack plugin.
+		//	'karma-coverage',
+		//	'karma-jasmine',
+		//	'karma-phantomjs-launcher',
+		//	'karma-chrome-launcher'
+		//]
 	});
 };
