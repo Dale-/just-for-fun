@@ -6,17 +6,12 @@
 
 export default class DemoController {
 
-	constructor() {
-		console.log(1);
-	}
-
 	$onInit() {
 		this.gridData = this.data.sort((v1, v2) => v1 - v2);
+		return '';
 	}
-
 
 	add(num1, num2) {
-		return num1 + num2;
+		return (num1 + num2);
 	}
-
 }

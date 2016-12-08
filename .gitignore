@@ -1,10 +1,11 @@
-node_modules
-.idea
+/node_modules
+/.idea
 build
 dist
 lib
 .sass-cache/
 .DS_Store
 npm-debug.log
+/coverage
 
 
