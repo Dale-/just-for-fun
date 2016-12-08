@@ -1,0 +1,33 @@
+.section {
+  .navbar-container {
+	width: 100%;
+	height: 30px;
+	padding: 10px;
+	font-size: 14px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+	.navbar-left {
+	  display: flex;
+	  height: 100%;
+	  float: left;
+	  align-items: center;
+	}
+	.navbar-title {
+
+	}
+	.navbar-right {
+	  display: flex;
+	  height: 100%;
+	  float: right;
+	  align-items: center;
+	}
+	.navbar-ul {
+	  display: flex;
+	}
+	.navbar-item {
+		width: 100px;
+
+	}
+  }
+  .section-body {
+  }
+}
