@@ -5,6 +5,7 @@
  */
 
 import './index.scss';
+import '../common/styles/_base.scss';
 
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';

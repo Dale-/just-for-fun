@@ -4,10 +4,17 @@
  * @since 12/7/16
  */
 
+var os = require('os');
 var path = require('path');
 var webpack = require('webpack');
 var HTMLPlugin = require('html-webpack-plugin');
 var autoprefixer = require('autoprefixer');
+var ASSETS_PATH = /src\/assets/;
+
+if (os.platform() === 'win32') {
+	ASSETS_PATH = /src\\assets/;
+}
+
 
 module.exports = {
 	devtool: 'source-map',
@@ -42,7 +49,7 @@ module.exports = {
 			{
 				test: /\.js$/,
 				loader: 'eslint-loader',
-				exclude: /node_modules/,
+				exclude: [/node_modules/, ASSETS_PATH],
 				include: [path.join(__dirname, 'src')]
 			}
 		],
@@ -51,7 +58,7 @@ module.exports = {
 			{
 				test: /\.js?$/,
 				loaders: ['babel'],
-				exclude: /(node_modules|bower_components)/,
+				exclude: [/(node_modules|bower_components)/, ASSETS_PATH],
 				include: [path.join(__dirname, 'src')]
 			},
 			{

@@ -1,0 +1,24 @@
+@import "../../common/styles/mixins";
+@import "../../common/styles/variables";
+
+.home {
+	.head {
+	  .head-content {
+		@include absolute-center-flex;
+		flex-direction: column;
+	  }
+	  .logo {
+		@include absolute-center-flex;
+		margin-top: 60px;
+	  }
+	  .logo-img {
+		width: 500px;
+		height: 500px;
+	  }
+	  .headline {
+		@include absolute-center-flex;
+		font-size: $font-size-larger;
+		font-weight: 300;
+	  }
+	}
+}

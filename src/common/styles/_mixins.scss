@@ -1,0 +1,24 @@
+@mixin absolute-center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin text-overflow-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin border-radius($number) {
+  border-radius: $number;
+  -moz-border-radius: $number;
+  -webkit-border-radius: $number;
+}
+
+@mixin box-shadow($shadow...) {
+  box-shadow: $shadow;
+  -webkit-box-shadow: $shadow;
+}
+
+

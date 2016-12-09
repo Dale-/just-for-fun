@@ -5,6 +5,7 @@
  */
 
 var path = require('path');
+var ASSETS_PATH = /src\/assets/;
 var webpack = require('webpack');
 var HTMLPlugin = require('html-webpack-plugin');
 var autoprefixer = require('autoprefixer');
@@ -54,7 +55,7 @@ module.exports = {
 			{
 				test: /\.js?$/,
 				loader: 'eslint-loader',
-				exclude: /node_modules/,
+				exclude: [/node_modules/, ASSETS_PATH],
 				include: path.join(__dirname, 'src')
 			}
 		],
@@ -63,7 +64,7 @@ module.exports = {
 			{
 				test: /\.js?$/,
 				loaders: ['babel'],
-				exclude: /(node_modules|bower_components)/,
+				exclude: [/(node_modules|bower_components)/, ASSETS_PATH],
 				include: [path.join(__dirname, 'src'), path.join(__dirname, 'demo')]
 			},
 			{
