@@ -9,7 +9,7 @@
     "test": "karma start",
     "lint": "eslint src",
     "prepush": "npm test",
-    "build": "webpack --config webpack-build.config.js"
+    "build": "NODE_ENV=production webpack --config webpack-build.config.js --env branding && cp -r ./src/assets ./branding"
   },
   "repository": {
     "type": "git",
