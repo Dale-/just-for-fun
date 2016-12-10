@@ -12,6 +12,7 @@ import uiRouter from 'angular-ui-router';
 import ngResource from 'angular-resource';
 
 import components from '../components';
+import loginModule from './login';
 import homeModule from './home';
 import aboutModule from './about';
 import contactModule from './contact';
@@ -34,6 +35,7 @@ export default angular
 		components,
 		uiRouter,
 		ngResource,
+		loginModule,
 		homeModule,
 		aboutModule,
 		contactModule,
