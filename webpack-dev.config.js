@@ -9,7 +9,7 @@ var path = require('path');
 var webpack = require('webpack');
 var HTMLPlugin = require('html-webpack-plugin');
 var autoprefixer = require('autoprefixer');
-var ASSETS_PATH = /src\/assets/;
+var g = /src\/assets/;
 
 if (os.platform() === 'win32') {
 	ASSETS_PATH = /src\\assets/;

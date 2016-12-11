@@ -82,7 +82,7 @@
 	  position: relative;
 	  background: #f7f7f7;
 	  content: '';
-	  height: 1000px;
+	  height: 950px;
 	  .evaluate-container {
 		@include absolute-center-flex;
 		flex-wrap: wrap;
@@ -213,7 +213,7 @@
 	  position: absolute;
 	  left: 50%;
 	  width: 2px;
-	  height: 1000px;
+	  height: 950px;
 	  content: '';
 	  background: #c8c8c8;
 	}
