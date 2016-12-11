@@ -131,6 +131,7 @@
 	  }
 	  .evaluate-list {
 		margin-top: 20px;
+		z-index: 2;
 	  }
 	  .evaluate-data {
 		@include border-radius(5px);
