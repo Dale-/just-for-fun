@@ -78,6 +78,63 @@
 	  }
 	}
 
+    .home-evaluate {
+	  position: relative;
+	  background: #f7f7f7;
+	  content: '';
+	  height: 800px;
+	  .evaluate-container {
+		@include absolute-center-flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		letter-spacing: .058em;
+	  }
+	  .evaluate-text {
+		@include absolute-center-flex;
+		flex-direction: column;
+		margin-top: 50px;
+		width: 550px;
+		text-align: center;
+		z-index: 2;
+		background: #f7f7f7;
+	  }
+	  .text-title {
+		margin: 0;
+		font-weight: 400;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+	  }
+	  .evaluate-description {
+		margin-top: 10px;
+		margin-bottom: 0;
+		line-height: 1.58;
+		max-width: 500px;
+		color: #969696;
+		letter-spacing: 0.6px;
+	  }
+	  .evaluate-date {
+		@include absolute-center-flex;
+		margin-top: 50px;
+		flex-direction: column;
+		z-index: 2;
+		background: #f7f7f7;
+	  }
+	  .date-icon {
+		width: 1rem;
+	  }
+	  .date-content {
+
+	  }
+	}
+	.home-evaluate:before {
+	  position: absolute;
+	  left: 50%;
+	  width: 2px;
+	  height: 800px;
+	  content: '';
+	  background: #c8c8c8;
+	}
+
     .home-start-here {
 	  @include absolute-center-flex;
 	  width: 100%;
