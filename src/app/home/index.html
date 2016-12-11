@@ -35,8 +35,25 @@
 					 ng-src="https://cdn.forestry.io/assets/gulp/icon-commit-eaa53b9586ed44106e2ef342d367ae154493bef53f03607d49af9a86f220cc54.svg">
 				<span class="date-content">Commits on dec 10,2016</span>
 			</div>
-			<div class="evaluate-data">
-
+			<div class="evaluate-list">
+				<div class="evaluate-data" ng-repeat="data in vm.evaluteDatas track by $index">
+					<div class="profile-picture">
+						<img class="profile-img" ng-src="{{data.icon}}">
+					</div>
+					<div class="commit-info">
+						<span class="info-message" ng-bind="data.commit"></span>
+						<span class="info-meta" ng-cloak><strong ng-bind="data.author"></strong>{{data.date}}</span>
+					</div>
+					<div class="commit-actions">
+						<div class="commit-copy">
+							<img class="commit-img" alt="Copy" src="https://cdn.forestry.io/assets/gulp/icon-clipboard-baae53f95d8bef4f397d5acddb4aa7e2cadd71d280fe0c36ae8d044b5b2a127b.svg">
+						</div>
+						<div class="commit-nr">{{data.commitId}}</div>
+						<div class="commit-button">
+							<img alt="Raw Code" src="https://cdn.forestry.io/assets/gulp/icon-code-f0725fa5f1818896769fc79f53644531e153474665f3202c7494755732e38c3a.svg">
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

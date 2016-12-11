@@ -82,7 +82,7 @@
 	  position: relative;
 	  background: #f7f7f7;
 	  content: '';
-	  height: 800px;
+	  height: 1000px;
 	  .evaluate-container {
 		@include absolute-center-flex;
 		flex-wrap: wrap;
@@ -110,7 +110,7 @@
 		line-height: 1.58;
 		max-width: 500px;
 		color: #969696;
-		letter-spacing: 0.6px;
+		letter-spacing: 0.8px;
 	  }
 	  .evaluate-date {
 		@include absolute-center-flex;
@@ -120,17 +120,55 @@
 		background: #f7f7f7;
 	  }
 	  .date-icon {
+		margin-top: 5px;
 		width: 1rem;
 	  }
 	  .date-content {
-
+		margin: 5px;
+		font-size: 12px;
+		font-weight: 600;
+		text-transform: uppercase;
+	  }
+	  .evaluate-list {
+		margin-top: 20px;
+	  }
+	  .evaluate-data {
+		@include border-radius(5px);
+		@include absolute-center-flex;
+		width: 800px;
+		height: 80px;
+		margin-bottom: 30px;
+		background: #FFFFFF;
+	  }
+	  .evaluate-data:hover {
+		width: 810px;
+		height: 90px;
+		margin-bottom: 20px;
+		transform: scale(1.04);
+		box-shadow: 0 1.25rem 2.5rem -0.625rem rgba(32,32,32,0.15);
+	  }
+	  .profile-picture {
+	  }
+	  .profile-img {
+		@include border-radius(3px);
+		width: 40px;
+	  }
+	  .commit-info {
+		@include absolute-center-flex;
+		flex-direction: column;
+	  }
+	  .commit-actions {
+		@include absolute-center-flex;
+	  }
+	  .commit-img {
+		width: 40px;
 	  }
 	}
 	.home-evaluate:before {
 	  position: absolute;
 	  left: 50%;
 	  width: 2px;
-	  height: 800px;
+	  height: 1000px;
 	  content: '';
 	  background: #c8c8c8;
 	}
