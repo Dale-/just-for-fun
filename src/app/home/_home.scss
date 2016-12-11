@@ -135,7 +135,6 @@
 	  }
 	  .evaluate-data {
 		@include border-radius(5px);
-		@include absolute-center-flex;
 		width: 800px;
 		height: 80px;
 		margin-bottom: 30px;
@@ -148,21 +147,65 @@
 		transform: scale(1.04);
 		box-shadow: 0 1.25rem 2.5rem -0.625rem rgba(32,32,32,0.15);
 	  }
+	  .evaluate-body {
+		display: flex;
+		width: 760px;
+		height: 60px;
+		padding: 10px 20px;
+	  }
 	  .profile-picture {
+		@include absolute-center-flex;
 	  }
 	  .profile-img {
 		@include border-radius(3px);
 		width: 40px;
 	  }
 	  .commit-info {
-		@include absolute-center-flex;
+		display: flex;
+		justify-content: center;
+		margin: 0 20px;
 		flex-direction: column;
 	  }
+	  .info-message {
+		font-size: 14px;
+		font-weight: bold;
+	  }
+	  .info-meta {
+		margin-top: 8px;
+		font-size: 10px;
+	  }
 	  .commit-actions {
+		display: flex;
+		width: 100px;
+		margin-right: 10px;
+		align-items: center;
+	  }
+	  .commit-group ,.commit-button{
+		@include border-radius(3px);
+		display: flex;
+		height: 30px;
+		border: 1px solid #f7f7f7;
+	  }
+	  .commit-copy {
 		@include absolute-center-flex;
 	  }
 	  .commit-img {
-		width: 40px;
+		width: 14px;
+		padding: 8px;
+		border-right: 1px solid #f7f7f7;
+	  }
+	  .commit-nr {
+		padding: 10px;
+		font-size: 10px;
+		font-weight: 600;
+		color: #202020;
+	  }
+	  .commit-button {
+		margin-left: 10px;
+	  }
+	  .button-img {
+		width: 14px;
+		padding: 8px;
 	  }
 	}
 	.home-evaluate:before {
