@@ -162,6 +162,7 @@
 	  }
 	  .commit-info {
 		display: flex;
+		flex: 1;
 		justify-content: center;
 		margin: 0 20px;
 		flex-direction: column;
@@ -176,8 +177,8 @@
 	  }
 	  .commit-actions {
 		display: flex;
-		width: 100px;
-		margin-right: 10px;
+		width: 150px;
+		margin-right: 20px;
 		align-items: center;
 	  }
 	  .commit-group ,.commit-button{
