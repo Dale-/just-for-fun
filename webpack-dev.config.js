@@ -9,12 +9,7 @@ var path = require('path');
 var webpack = require('webpack');
 var HTMLPlugin = require('html-webpack-plugin');
 var autoprefixer = require('autoprefixer');
-var g = /src\/assets/;
-
-if (os.platform() === 'win32') {
-	ASSETS_PATH = /src\\assets/;
-}
-
+var ASSETS_PATH = /src\/assets/;
 
 module.exports = {
 	devtool: 'source-map',
