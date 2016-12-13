@@ -13,7 +13,12 @@ export default class DemoController {
 	}
 
 	initMenu() {
+		this.selectedMenu = 'Home';
 		this.menus = MENUS_CONSTANT;
 		return this.menus;
+	}
+
+	goToPage(content) {
+		this.selectedMenu = content;
 	}
 }

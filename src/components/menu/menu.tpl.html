@@ -5,7 +5,10 @@
 		</div>
 		<div class="navbar-right">
 			<ul class="navbar-ul" ng-repeat="menu in vm.menus track by $index">
-				<li class="navbar-item"><a class="navbar-link" ui-sref="{{menu.state}}" ng-bind="menu.text"></a></li>
+				<li class="navbar-item">
+					<a class="navbar-link" ui-sref="{{menu.state}}" ng-bind="menu.text"
+					   ng-class="{ native: vm.selectedMenu === menu.text }" ng-click="vm.goToPage( menu.text)"></a>
+				</li>
 			</ul>
 		</div>
 	</div>
