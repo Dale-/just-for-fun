@@ -7,6 +7,7 @@
 import './_home.scss';
 
 import angular from 'angular';
+import clipboard from 'angular-clipboard';
 import homeTplUrl from './index.html';
 import HomeController from './HomeController';
 
@@ -21,6 +22,6 @@ function homeRouter($stateProvider) {
 	});
 }
 
-export default angular.module('app.home', [])
+export default angular.module('app.home', [clipboard.name])
 	.config(homeRouter)
 	.name;

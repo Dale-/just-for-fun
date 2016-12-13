@@ -24,11 +24,11 @@ app.use(require('webpack-dev-middleware')(compiler, {
 }));
 
 app.use(require('webpack-hot-middleware')(compiler));
-// 配置静态资源服务根路径
+
+// setting static resource
 app.use(jsonServer.defaults({static: path.resolve(__dirname)}));
 
 app.listen(3000, 'localhost', function (err) {
-// app.listen(3000, '172.19.0.238', function (err) {
 	if (err) {
 		console.log(err);
 		return;
