@@ -141,11 +141,9 @@
 		background: #FFFFFF;
 	  }
 	  .evaluate-data:hover {
-		width: 810px;
-		height: 90px;
-		margin-bottom: 20px;
 		transform: scale(1.04);
 		box-shadow: 0 1.25rem 2.5rem -0.625rem rgba(32,32,32,0.15);
+		transition: transform .2s ease,box-shadow .2s ease,-webkit-transform .2s ease;
 	  }
 	  .evaluate-body {
 		display: flex;
