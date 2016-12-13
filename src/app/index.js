@@ -23,7 +23,7 @@ import appTplUrl from './index.html';
 appRouter.$inject = ['$stateProvider', '$urlRouterProvider'];
 function appRouter($stateProvider, $urlRouterProvider) {
 
-	$urlRouterProvider.otherwise('/');
+	$urlRouterProvider.otherwise('/home');
 	$stateProvider.state('app', {
 		url: '/',
 		templateUrl: appTplUrl

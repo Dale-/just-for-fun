@@ -188,6 +188,11 @@
 	  .commit-copy {
 		@include absolute-center-flex;
 	  }
+	  .commit-copy:hover {
+		@include absolute-center-flex;
+		background: #4078c0;
+		cursor: pointer;
+	  }
 	  .commit-img {
 		width: 14px;
 		padding: 8px;
