@@ -186,22 +186,19 @@
 		border: 1px solid #f7f7f7;
 	  }
 	  .commit-copy {
+		@include border-radius(3px);
 		@include absolute-center-flex;
 	  }
 	  .commit-copy:hover {
 		@include absolute-center-flex;
 		cursor: pointer;
+		background: #FFFACD;
 	  }
 	  .commit-img {
 		width: 14px;
 		padding: 8px;
 		border-right: 1px solid #f7f7f7;
 	  }
-	  //.commit-icon {
-		//width: 14px;
-		//padding: 8px;
-		//border-right: 1px solid #f7f7f7;
-	  //}
 	  .commit-nr {
 		padding: 10px;
 		font-size: 10px;

@@ -10,7 +10,7 @@ export default class HomeController {
 		this.name = 'Home';
 		this.evaluteDatas = [
 			{
-				'icon': 'https://cdn.forestry.io/assets/gulp/profile-picture-cheryl-aa258c1a6a0069de5abbc08ec3cdc70e7ad8cd10cadc51977d825bbdb02338da.jpg',
+				'icon': '/src/assets/images/daledu.jpg',
 				'commit': 'Update from Forestry.io - setting-up-site/uploading-a-zip-file.md',
 				'author': 'DaleDu ',
 				'date': ' COMMITED WITH FORESTRY.IO 28 MINUTES AGO',
@@ -31,7 +31,7 @@ export default class HomeController {
 				'commitId': '25C4FD8'
 			},
 			{
-				'icon': 'https://cdn.forestry.io/assets/gulp/profile-picture-cheryl-aa258c1a6a0069de5abbc08ec3cdc70e7ad8cd10cadc51977d825bbdb02338da.jpg',
+				'icon': '/src/assets/images/daledu.jpg',
 				'commit': 'Update from Forestry.io - setting-up-site/uploading-a-zip-file.md',
 				'author': 'CHERYLJAM ',
 				'date': ' COMMITED WITH FORESTRY.IO 48 MINUTES AGO',
