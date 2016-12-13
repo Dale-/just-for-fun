@@ -19,7 +19,8 @@ describe('MenuController', () => {
 	});
 
 	it('initMenu', () => {
-		expect(factory.initMenu().length).toBe(5);
+		expect(Object.keys(factory.initMenu())).toEqual(["HOME", "ABOUT", "PERSONAL", "CONTACT", "LOGIN"]);
+		expect(factory.initMenu().HOME.text).toEqual('Home');
 	});
 
 });
