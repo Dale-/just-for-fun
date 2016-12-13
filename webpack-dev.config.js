@@ -12,6 +12,7 @@ var autoprefixer = require('autoprefixer');
 var ASSETS_PATH = /src\/assets/;
 
 module.exports = {
+	env: 'development',
 	devtool: 'source-map',
 	entry: ['webpack-hot-middleware/client?path=/__webpack_hmr&reload=true', './src/app/index.js'],
 	output: {
@@ -22,10 +23,9 @@ module.exports = {
 	plugins: [
 		new HTMLPlugin({
 			template: './src/index.html',
-			filename: 'index.html',
+			filename: './index.html',
 			inject: false
 		}),
-		new webpack.optimize.OccurenceOrderPlugin(),
 		new webpack.HotModuleReplacementPlugin(),
 		new webpack.NoErrorsPlugin()
 	],
@@ -33,7 +33,7 @@ module.exports = {
 		extensions: ['', '.js']
 	},
 	eslint: {
-		configFile: '.eslintrc',
+		//configFile: '.eslintrc',
 		emitWarning: true,
 		emitError: true,
 		formatter: require('eslint-friendly-formatter')
@@ -71,20 +71,14 @@ module.exports = {
 				include: path.join(__dirname, 'src/app')
 			},
 			{
-				test: /\.css$/,
-				loaders: ['style', 'css?modules', 'postcss', 'resolve-url'],
-				exclude: /(node_modules|bower_components)/
-			},
-			{
-				test: /\.scss$/,
+				test: /\.(sc|c)ss$/,
 				loaders: ['style', 'css', 'postcss', 'resolve-url', 'sass?sourceMap'],
 				exclude: /(node_modules|bower_components)/
 			},
 			{
 				test: /\.(jpe?g|png|gif|svg)$/i,
 				loaders: [
-					'file?hash=sha512&digest=hex&name=[hash:8].[ext]',
-					'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
+					'file?hash=sha512&digest=hex&name=[hash:8].[ext]'
 				]
 			},
 			{

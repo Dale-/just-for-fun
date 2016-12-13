@@ -17,11 +17,6 @@ module.exports = {
 		path: path.join(__dirname, 'dist'),
 		filename: '[name].js'
 	},
-	externals: {
-		'angular': 'angular',
-		'angular-resource': '\'ngResource\'',
-		'angular-ui-router': '\'ui.router\''
-	},
 	plugins: [
 		new webpack.DefinePlugin({
 			'process.env': {
