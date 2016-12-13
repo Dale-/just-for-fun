@@ -6,9 +6,11 @@
 
 import angular from 'angular';
 import demo from './demo';
+import menu from './menu';
 
 export default angular
 	.module('app.components', [
-		demo
+		demo,
+		menu
 	])
 	.name;

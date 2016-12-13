@@ -1,0 +1,12 @@
+<nav class="section-navbar">
+	<div class="navbar-container">
+		<div class="navbar-left">
+			<a class="navbar-title" href="#">Just For Fun</a>
+		</div>
+		<div class="navbar-right">
+			<ul class="navbar-ul" ng-repeat="menu in vm.menus track by $index">
+				<li class="navbar-item"><a class="navbar-link" ui-sref="{{menu.state}}" ng-bind="menu.text"></a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
