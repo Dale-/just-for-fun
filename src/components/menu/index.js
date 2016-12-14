@@ -14,10 +14,7 @@ import angular from 'angular';
 const DDO = {
 	template,
 	controller,
-	controllerAs: 'vm',
-	bindings: {
-		state: '<'
-	}
+	controllerAs: 'vm'
 };
 
 export default angular.module('app.components.menu', [])
