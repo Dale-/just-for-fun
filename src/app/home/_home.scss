@@ -249,7 +249,13 @@
 		background: #007fff;
 	  }
 	}
+    .contact-modal {
+	  position: fixed;
+	  right: 20px;
+	  bottom: 100px;
+	}
     .contact-us {
+	  @include border-radius(50%);
 	  position: fixed;
 	  right: 20px;
 	  bottom: 20px;
@@ -257,7 +263,6 @@
 	  height: 70px;
 	  background: no-repeat url('/src/assets/images/contact1.png');
 	  background-size: 70px;
-	  border-radius: 50%;
 	  box-shadow: 0 0 30px rgba(0,0,0,0.2);
 	}
     .contact-us:hover {
