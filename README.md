@@ -9,8 +9,8 @@
 [![devDependency Status](https://david-dm.org/Dale-/just-for-fun/dev-status.svg)](https://david-dm.org/Dale-/just-for-fun#info=devDependencies)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
-> *  安装依赖 `npm install`
+> *  Dependencies: `npm install`
 
-> *  启动项目  `npm start`
+> *  Start Project: `npm start`
 
-> *  访问路径 `http://127.0.0.1:3000`
+> *  Visit Path: `http://127.0.0.1:3000`
