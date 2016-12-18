@@ -2,6 +2,7 @@
 @import "../../common/styles/variables";
 
 .home {
+    position: relative;
 	.home-content {
 	  @include absolute-center-flex;
 	  margin-bottom: 100px;
@@ -253,6 +254,7 @@
 	  position: fixed;
 	  right: 20px;
 	  bottom: 100px;
+	  z-index: 99;
 	}
     .contact-us {
 	  @include border-radius(50%);
