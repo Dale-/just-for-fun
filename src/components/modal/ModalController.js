@@ -4,12 +4,11 @@
  * @since 12/14/16
  */
 
-// import { MODAL_CONSTANT } from './Constant';
+import { MODAL_CONSTANT } from './Constant';
 
 export default class ModalController {
 
 	constructor() {
-		this.name = 'modal';
+		this.infos = MODAL_CONSTANT;
 	}
-
 }

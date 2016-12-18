@@ -8,6 +8,7 @@ export default class HomeController {
 
 	constructor() {
 		this.name = 'Home';
+		this.isShowModal = false;
 		this.evaluteDatas = [
 			{
 				'icon': '/src/assets/images/daledu.jpg',
@@ -53,4 +54,9 @@ export default class HomeController {
 		];
 	}
 
+	openOrCloseModal() {
+		this.isShowModal = !this.isShowModal;
+		console.log('--------------------');
+		console.log(this.isShowModal);
+	}
 }

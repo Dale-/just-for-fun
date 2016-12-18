@@ -256,7 +256,7 @@
 	  bottom: 100px;
 	  z-index: 99;
 	}
-    .contact-us {
+    .contact-us{
 	  @include border-radius(50%);
 	  position: fixed;
 	  right: 20px;
@@ -267,7 +267,7 @@
 	  background-size: 70px;
 	  box-shadow: 0 0 30px rgba(0,0,0,0.2);
 	}
-    .contact-us:hover {
+    .contact-us:hover{
 	  cursor: pointer;
 	  box-shadow: 0 0 30px rgba(0,0,0,0.5);
 	}
