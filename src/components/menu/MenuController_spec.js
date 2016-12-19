@@ -22,10 +22,4 @@ describe('MenuController', () => {
 		expect(Object.keys(factory.initMenu())).toEqual([ 'HOME', 'PERSONAL', 'CONTACT', 'LOGIN', 'ABOUT' ]);
 		expect(factory.initMenu().HOME.text).toEqual('Home');
 	});
-
-	it('goToPage', () => {
-		factory.goToPage('Home');
-		expect(factory.selectedMenu).toEqual('Home');
-	});
-
 });
