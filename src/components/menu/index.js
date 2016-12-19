@@ -5,11 +5,9 @@
  */
 
 import './_menu.scss';
-
+import angular from 'angular';
 import template from './menu.tpl.html';
 import controller from './MenuController';
-
-import angular from 'angular';
 
 const DDO = {
 	template,

@@ -17,4 +17,9 @@ describe('ModalController', () => {
 	afterEach(() => {
 		factory = null;
 	});
+
+	it('constructor', () => {
+		expect(factory.infos.length).toEqual(2);
+		expect(factory.infos[0].theme).toEqual('Travelling');
+	});
 });

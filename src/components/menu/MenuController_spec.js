@@ -18,8 +18,8 @@ describe('MenuController', () => {
 		factory = null;
 	});
 
-	it('initMenu', () => {
-		expect(Object.keys(factory.initMenu())).toEqual([ 'HOME', 'PERSONAL', 'CONTACT', 'LOGIN', 'ABOUT' ]);
-		expect(factory.initMenu().HOME.text).toEqual('Home');
+	it('constructor', () => {
+		expect(Object.keys(factory.menus)).toEqual([ 'HOME', 'PERSONAL', 'CONTACT', 'LOGIN', 'ABOUT' ]);
+		expect(factory.menus.HOME.text).toEqual('Home');
 	});
 });
