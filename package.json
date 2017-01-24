@@ -47,7 +47,7 @@
     "file-loader": "^0.9.0",
     "html-loader": "^0.4.0",
     "html-webpack-plugin": "^2.18.0",
-    "husky": "^0.11.9",
+    "husky": "^0.13.1",
     "image-webpack-loader": "^3.0.0",
     "istanbul-instrumenter-loader": "^1.1.0",
     "jasmine-ajax": "^3.2.0",
@@ -61,10 +61,10 @@
     "karma-phantomjs-launcher": "^1.0.0",
     "karma-sourcemap-loader": "^0.3.7",
     "karma-tap": "^3.1.1",
-    "karma-webpack": "^1.7.0",
+    "karma-webpack": "^2.0.1",
     "lodash": "^4.17.2",
     "node-dir": "^0.1.11",
-    "node-sass": "^3.7.0",
+    "node-sass": "^4.3.0",
     "phantomjs-prebuilt": "^2.1.7",
     "postcss-loader": "^1.2.0",
     "resolve-url-loader": "^1.4.3",
@@ -82,7 +82,7 @@
     "angular-clipboard": "^1.5.0",
     "angular-es-utils": "^2.1.2",
     "angular-resource": "^1.5.0",
-    "angular-ui-router": "^0.3.2",
+    "angular-ui-router": "^0.4.2",
     "normalize.css": "^5.0.0"
   }
 }
