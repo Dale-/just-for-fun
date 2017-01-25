@@ -1,0 +1,95 @@
+.contact {
+  color: #a09ea2;
+
+  .contact-header {
+	margin-bottom: 100px;
+	.contact-title {
+	  margin: auto;
+	  width: 750px;
+	  font-size: 18px;
+	}
+	h1 {
+	  color: #31436a;
+	  font-size: 40px;
+	  margin: 30px;
+	  text-align: center;
+	}
+  }
+  .contact-version {
+	margin-bottom: 50px;
+	.selected {
+	  color: #0091ff;
+	}
+	.version-tab {
+	  display: flex;
+	  justify-content: center;
+	  margin-bottom: 20px;
+	  .tab-body {
+		display: flex;
+		justify-content: space-between;
+		width: 250px;
+	  }
+	  .version-classify {
+		font-weight: 600;
+		cursor: pointer;
+	  }
+	  .version-classify:hover {
+		text-decoration: underline;
+		font-weight: 600;
+	  }
+	}
+	.version-body {
+	  display: flex;
+	  justify-content: center;
+	  font-weight: 300;
+	  .version-block {
+		padding: 20px;
+		width: 300px;
+		height: 500px;
+		margin: 10px;
+		border: 1px solid #E0E7ED;
+		.header {
+		  padding: 10px 20px;
+		  font-size: 14px;
+		  text-align: center;
+		}
+		h3 {
+		  color: #113861;
+		}
+		.price {
+		  display: flex;
+		  justify-content: center;
+		}
+		.price-body {
+		  width: 150px;
+		}
+		.number {
+		  font-size: 26px;
+		  color: #0091ff;
+		}
+		.percent {
+		  font-size: 18px;
+		  color: #0091ff;
+		}
+		.feature {
+		  display: flex;
+		  flex-direction: column;
+		  li {
+			margin-bottom: 15px;
+			padding-left: 30px;
+			background: url('../../assets/images/contact/check.png') no-repeat 0 0;
+			background-size: 20px 20px;
+		  }
+		  .nope {
+			opacity: 0.5;
+			text-decoration: line-through;
+			filter: grayscale(100%);
+		  }
+		}
+	  }
+	}
+  }
+  .contact-feedback {
+
+  }
+}

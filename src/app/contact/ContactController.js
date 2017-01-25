@@ -8,6 +8,11 @@ export default class ContactController {
 
 	constructor() {
 		this.name = 'contact';
+		this.selectedDuration = 'monthly';
+	}
+
+	changeDuration(duration) {
+		this.selectedDuration = duration;
 	}
 
 }

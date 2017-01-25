@@ -56,7 +56,5 @@ export default class HomeController {
 
 	openOrCloseModal() {
 		this.isShowModal = !this.isShowModal;
-		console.log('--------------------');
-		console.log(this.isShowModal);
 	}
 }

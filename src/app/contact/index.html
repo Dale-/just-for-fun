@@ -1,1 +1,90 @@
-{{vm.name}} page
+<div class="contact">
+	<section class="contact-header">
+		<div class="contact-title">
+			<h1>Plans for every passion</h1>
+			<span>Get the tools and support needed to build your business, so you can create the life you want.</span>
+		</div>
+	</section>
+	<section class="contact-version">
+		<div class="version-tab">
+			<div class="tab-body">
+				<span class="version-classify" ng-class="{'selected':vm.selectedDuration ==='monthly'}"
+					  ng-click="vm.changeDuration('monthly')"> Monthly billing </span>
+				<span class="version-classify" ng-class="{'selected':vm.selectedDuration ==='annual'}"
+					  ng-click="vm.changeDuration('annual')"> Annual billing </span>
+			</div>
+		</div>
+		<div class="version-body">
+			<div class="version-block">
+				<div class="header">
+					<h3>Mover</h3>
+					<p>You want to get your business moving and you’re ready to see results.</p>
+				</div>
+				<div class="price">
+					<div class="price-body">
+						<p><sup>$</sup> <span class="number">29</span> / month</p>
+						<p> plus <span class="percent">0%</span> Coach fee </p>
+					</div>
+				</div>
+				<div class="feature">
+					<ul>
+						<li>1,000 subscribers</li>
+						<li>Unlimited products</li>
+						<li>Custom domain</li>
+						<li>Drip emails</li>
+						<li>PayPal & credit card payments</li>
+						<li class="nope">Onboarding / migration assistance</li>
+						<li class="nope">Monthly coaching call to help grow your business</li>
+					</ul>
+				</div>
+			</div>
+			<div class="version-block">
+				<div class="header">
+					<h3>Shaker</h3>
+					<p>You're ready to shake things up by scaling your most successful products.</p>
+				</div>
+				<div class="price">
+					<div class="price-body">
+						<p><sup>$</sup> <span class="number">49</span> / month</p>
+						<p> plus <span class="percent">0%</span> Coach fee </p>
+					</div>
+				</div>
+				<div class="feature">
+					<ul>
+						<li>1,000 subscribers</li>
+						<li>Unlimited products</li>
+						<li>Custom domain</li>
+						<li>Drip emails</li>
+						<li>PayPal & credit card payments</li>
+						<li>Onboarding / migration assistance</li>
+						<li class="nope">Monthly coaching call to help grow your business</li>
+					</ul>
+				</div>
+			</div>
+			<div class="version-block">
+				<div class="header">
+					<h3>Earthquaker</h3>
+					<p>You're already making waves in your business and want to amplify your success.</p>
+				</div>
+				<div class="price">
+					<div class="price-body">
+						<p><sup>$</sup> <span class="number">99</span> / month</p>
+						<p> plus <span class="percent">0%</span> Coach fee </p>
+					</div>
+				</div>
+				<div class="feature">
+					<ul>
+						<li>1,000 subscribers</li>
+						<li>Unlimited products</li>
+						<li>Custom domain</li>
+						<li>Drip emails</li>
+						<li>PayPal & credit card payments</li>
+						<li>Onboarding / migration assistance</li>
+						<li>Monthly coaching call to help grow your business</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="contact-feedback"></section>
+</div>
