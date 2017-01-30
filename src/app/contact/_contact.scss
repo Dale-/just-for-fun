@@ -118,6 +118,50 @@
 	}
   }
   .contact-feedback {
-
+	display: flex;
+	flex-direction: column;
+	.feedback-title {
+	  h3 {
+		margin: 30px;
+		font-size: 30px;
+		font-weight: 300;
+		color: #314362;
+		text-align: center;
+	  }
+	  .sub-title {
+		text-align: center;
+		font-weight: 500;
+		color: darkgrey;
+	  }
+	}
+	.feedback-body {
+	  margin: 80px auto;
+	  .one-feedback {
+		padding-top: 45px;
+		padding-left: 15px;
+		margin-bottom: 60px;
+		width: 500px;
+		color: #36434d;
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 2;
+		background-size: 90px 90px;
+		background: url('../../assets/images/contact/quotation.png') no-repeat 0 0;
+	  }
+	  .feedback-person {
+		margin-top: 30px;
+		display: flex;
+	  }
+	  .feedback-img {
+		width: 40px;
+		height: 40px;
+	  }
+	  .describe-person {
+		margin-left: 20px;
+		font-size: 14px;
+		font-weight: 500;
+		color: darkgrey;
+	  }
+	}
   }
 }
