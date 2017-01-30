@@ -1,3 +1,6 @@
+@import "../../common/styles/mixins";
+@import "../../common/styles/variables";
+
 .contact {
   color: #a09ea2;
 
@@ -17,13 +20,18 @@
   }
   .contact-version {
 	margin-bottom: 50px;
+
+	.nope {
+	  opacity: 0.5;
+	  filter: grayscale(100%);
+	}
 	.selected {
-	  color: #0091ff;
+	  color: #2b9cf2;
 	}
 	.version-tab {
 	  display: flex;
 	  justify-content: center;
-	  margin-bottom: 20px;
+	  margin-bottom: 50px;
 	  .tab-body {
 		display: flex;
 		justify-content: space-between;
@@ -45,8 +53,8 @@
 	  .version-block {
 		padding: 20px;
 		width: 300px;
-		height: 500px;
-		margin: 10px;
+		height: 600px;
+		margin: 5px;
 		border: 1px solid #E0E7ED;
 		.header {
 		  padding: 10px 20px;
@@ -65,11 +73,11 @@
 		}
 		.number {
 		  font-size: 26px;
-		  color: #0091ff;
+		  color: #2b9cf2;
 		}
 		.percent {
 		  font-size: 18px;
-		  color: #0091ff;
+		  color: #2b9cf2;
 		}
 		.feature {
 		  display: flex;
@@ -81,11 +89,31 @@
 			background-size: 20px 20px;
 		  }
 		  .nope {
-			opacity: 0.5;
 			text-decoration: line-through;
-			filter: grayscale(100%);
 		  }
 		}
+		.sign-up {
+		  margin: 30px 0;
+		  text-align: center;
+		}
+		.sign-up-button {
+		  @include border-radius(5px);
+		  padding: 15px 20px;
+		  color: #FFFFFF;
+		  font-size: 16px;
+		  font-weight: 600;
+		  border: none;
+		  background: #2b9cf2;
+		}
+		.sign-up-button:hover {
+		  cursor: pointer;
+		}
+	  }
+	  .version-block:hover {
+		box-shadow: 0 0 80px rgba(54,67,77,0.2);
+		transform: scale(1.05) translateY(-1%);
+		transition-duration: 0.15s;
+		z-index: 99;
 	  }
 	}
   }
