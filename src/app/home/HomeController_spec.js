@@ -21,6 +21,7 @@ describe('HomeController', () => {
 	it('constructor', () => {
 		expect(home.name).toEqual('Home');
 		expect(home.isShowModal).toEqual(false);
+		expect(home.evaluteDatas.length).toEqual(6);
 	});
 
 	it('openOrCloseModal', () => {
