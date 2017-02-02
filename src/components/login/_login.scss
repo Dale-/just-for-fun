@@ -1,0 +1,89 @@
+@import "../../common/styles/mixins";
+@import "../../common/styles/variables";
+
+.login {
+  width: 400px;
+  margin: 0 auto;
+  -webkit-font-smoothing: antialiased;
+  @include border-radius(5px);
+  box-shadow: 0 10px 30px 0 rgba(0,0,0,.15);
+  .login-header {
+	height: 70px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background: url('../../assets/images/login/login-background.png') center -13.5rem no-repeat #bc7acc;
+	background-size: 100vw auto;
+	h3 {
+	  color: #fff;
+	  font-size: 26px;
+	  font-weight: 200;
+	  text-align: center;
+	  line-height: 70px;
+	}
+  }
+  .login-body {
+	margin: 30px auto;
+	width: 300px;
+	.form-group {
+	  margin-bottom: 20px;
+	}
+	.group-title {
+	  font-size: 10px;
+	  font-weight: 700;
+	  font-family: Apercu,sans-serif;
+	  color: #817aac;
+	  letter-spacing: .3em;
+	  text-transform: uppercase;
+	  box-shadow: none;
+	}
+	.user-input {
+	  margin-top: 20px;
+	  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.05);
+	}
+	input {
+	  padding: 5px 0;
+	  border: none;
+	  height: 20px;
+	  font-size: 18px;
+	  color: #373a3c;
+	  font-weight: 200;
+	  outline: none;
+	}
+	.login-button {
+	  margin-top: 60px;
+	  text-align: center;
+	  button {
+		padding: 15px 60px;
+		color: #fff;
+		font-weight: 500;
+		@include border-radius(1.6875rem);
+		background: #bc7acc;
+		border: none;
+	  }
+	  button:hover {
+		cursor: pointer;
+		background: #a955be;
+	  }
+	}
+  }
+  .login-footer {
+	height: 60px;
+	padding-top: 20px;
+	background: #f8f8f8;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	small {
+	  display: block;
+	  margin-bottom: 10px;
+	  color: #bababa;
+	  text-align: center;
+	}
+	.remind {
+	  color: #f04d30;
+	}
+	.remind:hover {
+	  text-decoration: underline;
+	  cursor: pointer;
+	}
+  }
+}

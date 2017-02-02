@@ -7,10 +7,12 @@
 import angular from 'angular';
 import menu from './menu';
 import modal from './modal';
+import login from './login';
 
 export default angular
 	.module('app.components', [
 		menu,
-		modal
+		modal,
+		login
 	])
 	.name;
