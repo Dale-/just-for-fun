@@ -1,1 +1,27 @@
-{{vm.name}} page
+<div class="about">
+	<div class="about-top">
+		<div class="about-title">
+			<h1>Simple, beautiful software for a safer web</h1>
+			<h2>Fun fact: Truman is short for Trust Management.</h2>
+		</div>
+	</div>
+	<div class="about-body">
+		<div class="about-part">
+			<div class="title">
+				<p class="major-title">We <span class="love">love</span> tackling problems</p>
+				<p class="sub-title">We know people are understand when it comes to internet safety.</p>
+				<p class="sub-title">That’s why we’re changing things!</p>
+			</div>
+			<div class="body">
+				<div class="item" ng-repeat="item in vm.features track by $index">
+					<div class="item-flag">
+						<img class="item-img" ng-src="{{item.image}}">
+					</div>
+					<h1 ng-bind="item.title"></h1>
+					<p class="item-describe" ng-bind="item.subTitle"></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="about-footer"></div>
+</div>

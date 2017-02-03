@@ -16,7 +16,6 @@ import loginModule from './login';
 import homeModule from './home';
 import aboutModule from './about';
 import contactModule from './contact';
-import personalModule from './personal';
 
 import appTplUrl from './index.html';
 
@@ -38,8 +37,7 @@ export default angular
 		loginModule,
 		homeModule,
 		aboutModule,
-		contactModule,
-		personalModule
+		contactModule
 	])
 	.config(appRouter)
 	.run(['$rootScope', '$state', ($rootScope, $state) => {

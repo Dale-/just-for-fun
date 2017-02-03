@@ -2,6 +2,7 @@
 @import "../../common/styles/variables";
 
 .home {
+    margin-top: 100px;
     position: relative;
 	.home-content {
 	  @include absolute-center-flex;

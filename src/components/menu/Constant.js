@@ -9,10 +9,6 @@ export const MENUS_CONSTANT = {
 		state: '.home',
 		text: 'Home'
 	},
-	PERSONAL: {
-		state: '.personal',
-		text: 'Personal'
-	},
 	CONTACT: {
 		state: '.contact',
 		text: 'Contact'
