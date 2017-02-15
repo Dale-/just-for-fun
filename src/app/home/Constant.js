@@ -6,7 +6,7 @@
 
 export const EVALUTE_DATAS = [
 	{
-		'icon': '/src/assets/images/daledu.jpg',
+		'icon': '/src/assets/images/home/daledu.jpg',
 		'commit': 'Update from Forestry.io - setting-up-site/uploading-a-zip-file.md',
 		'author': 'DaleDu ',
 		'date': ' COMMITED WITH FORESTRY.IO 28 MINUTES AGO',
@@ -27,7 +27,7 @@ export const EVALUTE_DATAS = [
 		'commitId': '25C4FD8'
 	},
 	{
-		'icon': '/src/assets/images/daledu.jpg',
+		'icon': '/src/assets/images/home/daledu.jpg',
 		'commit': 'Update from Forestry.io - setting-up-site/uploading-a-zip-file.md',
 		'author': 'CHERYLJAM ',
 		'date': ' COMMITED WITH FORESTRY.IO 48 MINUTES AGO',
