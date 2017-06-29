@@ -11,6 +11,6 @@
 
 > *  Dependencies: `npm install`
 
-> *  Start Project: `npm start`
+*  Start Project: `npm start`
 
-> *  Visit Path: `http://127.0.0.1:3000`
+*  Visit Path: `http://127.0.0.1:3000`
