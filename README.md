@@ -10,5 +10,5 @@
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
 > *  Dependencies: `npm install`
-*  Start Project: `npm start`
-*  Visit Path: `http://127.0.0.1:3000`
+> *  Start Project: `npm start`
+> *  Visit Path: `http://127.0.0.1:3000`
